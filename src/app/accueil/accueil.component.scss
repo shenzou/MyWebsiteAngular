@@ -1,0 +1,74 @@
+#pageLayout {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-image: url('../../assets/images/header-background.jpg');
+    background-position: bottom;
+    min-height: 850px;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif !important;
+  }
+
+.lineItem {
+    width: max-content !important;
+    text-align: center;
+    padding-top: 1vw !important;
+}
+
+h1 {
+   font: calc(.5em + 4vw) 'Open Sans', sans-serif !important;
+    color: rgb(238, 238, 238);
+    margin: 0 0 0px !important;
+    max-width: 80% !important;
+ }
+
+ h2 {
+   font: calc(.5em + 2vw) 'Open Sans', sans-serif !important;
+    color: rgb(238, 238, 238);
+    margin: 0 0 0px !important;
+    max-width: 70% !important;
+ }
+
+ h3 {
+   font: calc(.5em + .5vw) 'Open Sans', sans-serif !important;
+   margin: 0 0 0px !important;
+   max-width: 50% !important;
+    color: rgb(177, 177, 177);
+ }
+
+ .mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+   --mdc-tab-indicator-active-indicator-color: #e69138;
+   --mat-tab-header-disabled-ripple-color: #ffffff;
+   --mat-tab-header-pagination-icon-color: #ffffff;
+   --mat-tab-header-inactive-label-text-color: #ffffff;
+   --mat-tab-header-active-label-text-color: #e69138;
+   --mat-tab-header-active-ripple-color: #e69138;
+   --mat-tab-header-inactive-ripple-color: #e69138;
+   --mat-tab-header-inactive-focus-label-text-color: rgba(221, 221, 221, 0.6);
+   --mat-tab-header-inactive-hover-label-text-color: rgba(221, 221, 221, 1);
+   --mat-tab-header-active-focus-label-text-color: #e69138;
+   --mat-tab-header-active-hover-label-text-color: #e69138;
+   --mat-tab-header-active-focus-indicator-color: #e69138;
+   --mat-tab-header-active-hover-indicator-color: #e69138;
+}
+
+.social li a { color: #fff; }
+.social li a:hover { color: #e69138; }
+
+.social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+   font-size: calc(0.5em + 1vw);
+}
+
+hr {
+   width: 60%;
+   margin: 18px auto 18px auto;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .1);
+}

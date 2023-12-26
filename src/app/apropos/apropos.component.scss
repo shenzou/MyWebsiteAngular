@@ -1,0 +1,73 @@
+.profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.page {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.apropos {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    gap: 20px;
+    width: 100%;
+}
+
+.contactcv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+
+.aproposdiv {
+    max-width: 50%;
+    height: 10vh;
+}
+
+.description {
+    color: rgb(177, 177, 177);
+}
+
+.contacter {
+    color: rgb(177, 177, 177);
+}
+
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    font: 16px/30px 'opensans-bold', sans-serif;
+    background: #e69138;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}

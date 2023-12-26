@@ -1,0 +1,39 @@
+<div class="form">
+    <div>
+        <div>
+            <h1>
+                <span>Get In Touch.</span>
+            </h1>
+        </div>
+        <div>
+            <p class="text">N'hésitez pas à me contacter pour toute information.</p>
+        </div>
+    </div>
+    <div class="formFull">
+        <h2>Envoyer un mail</h2>
+        <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+            <div class="formField">
+                <label for="emailAddress" class="formText">Email</label>
+                <input type="email" placeholder="Enter email" class="form-input" formControlName="emailAddress"
+                    [class.invalid]="isEmailValid()">
+                <span *ngIf="isEmailValid()" class="error">This field is required.</span>
+            </div>
+            <div class="formField">
+                <label for="name" class="formText">Name</label>
+                <input type="text" placeholder="Enter name" class="form-input" formControlName="name" [class.invalid]="isNameValid()">
+                <span *ngIf="isNameValid()" class="error">This field is required.</span>
+            </div>
+            <div class="formField">
+                <label for="subject" class="formText">Subject</label>
+                <input type="text" placeholder="Enter subject" class="form-input" formControlName="subject" [class.invalid]="isSubjectValid()">
+                <span *ngIf="isSubjectValid()" class="error">This field is required.</span>
+            </div>
+            <div class="formField">
+                <label for="body" class="formText">Body</label>
+                <textarea formControlName="body" [class.invalid]="isBodyValid()"></textarea>
+                <span *ngIf="isBodyValid()" class="error">This field is required.</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
